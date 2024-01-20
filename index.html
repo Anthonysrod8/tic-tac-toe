@@ -9,35 +9,31 @@
 <body>
     <!-- PLAYER NEEDS TO SELECT MARKER START-->
     <div class="floater">
-        <div class="select-marker">
             <h1 class="floater-message">Please Select Marker</h1>
-            <button class="x">X</button>
-            <button class="y">Y</button>
-        </div>
-        <div class="versus-select">
+            <button class="x" onclick="xButt()">X</button>
+            <button class="o" onclick="oButt()">O</button>
+        
+        
             <h1 class="versus-message">Who do you want to play with?</h1>
-            <button class="player-two">Player 2</button>
-            <button class="computer">Computer</button>
-        </div>
+            <button class="player-two" onclick="playerTwoButt()">Player 2</button>
+            <button class="computer" onclick="computerButt()">Computer</button>
+        
+        
+            <button class="ready" onclick="readyButt()">READY!</button>
+        
     </div>
     <!--PLAYER NEEDS TO SELECT MARKER END-->
     <div id="container">
         <div class="board">
-            <div class="row-one">
-                <div class="cell">1</div>
-                <div class="cell">2</div>
-                <div class="cell">3</div>
-            </div>
-            <div class="row-two">
-                <div class="cell">1</div>
-                <div class="cell">2</div>
-                <div class="cell">3</div>
-            </div>
-            <div class="row-three">
-                <div class="cell">1</div>
-                <div class="cell">2</div>
-                <div class="cell">3</div>
-            </div>
+            <div class="cell" id="1-1" value="1"></div>
+            <div class="cell" id="1-2"></div>
+            <div class="cell" id="1-3"></div>
+            <div class="cell" id="2-1"></div>
+            <div class="cell" id="2-2"></div>
+            <div class="cell" id="2-3"></div>
+            <div class="cell" id="3-1"></div>
+            <div class="cell" id="3-2"></div>
+            <div class="cell" id="3-3"></div>
     </div>
         <div class="messages-container">
             <h2 class="messages">Good Luck!</h2>

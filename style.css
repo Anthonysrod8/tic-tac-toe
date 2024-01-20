@@ -7,3 +7,94 @@
 body {
     background-color: slateblue;
 }
+
+/* FLOATER START ============ */
+.floater {
+    display:grid;
+    position: absolute;
+    background-color: #0891b2;
+    height: 60vh;
+    width: 60vh;
+    bottom: 15em;
+    right: 15em;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 10em 6em 10em 6em 10em;
+}
+
+.floater-message {
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    color: #d8b4fe;
+    text-align: center;
+    align-items: center;
+    font-size: 3em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.x {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: 'white';
+}
+.o {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+}
+
+.versus-message {
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    color: #d8b4fe;
+    text-align: center;
+    align-items: center;
+    font-size: 3em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.player-two {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.computer {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.ready {
+    grid-column: 1/-1;
+    grid-row: 5/6;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* FLOATER END ============ */
+#container {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.board {
+    display: grid;
+    grid-column: 1/2;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 12em);
+    text-align: center;
+}
+
+.cell {
+    background-color: brown;
+    border: 2px solid black;
+    font-size: 10em;
+}
+
+
+.messages-container {
+    display: grid;
+    grid-column: 2/3;
+    text-align: center;
+    align-items: center;
+    
+}
+.messages {
+    font-size: 6em;
+}
